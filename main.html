@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Carousel</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
     <!-- Write your code here -->
     <!-- Bootstrap Bundle with Popper -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for Slides -->
+    <div class="carousel-inner">
+      <!-- First Slide -->
+      <div class="item first-slide">
+        <img src="https://i.pinimg.com/736x/71/de/4e/71de4ed8be680f961fabb7473609f559.jpg" alt="First Slide">
+        <div class="carousel-caption">
+          <h3>First Slide</h3>
+          <p>Description for the first slide.</p>
+        </div>
+      </div>
+
+      <!-- Second Slide -->
+      <div class="item second-slide">
+        <img src="https://i.pinimg.com/736x/71/de/4e/71de4ed8be680f961fabb7473609f559.jpg" alt="Second Slide">
+        <div class="carousel-caption">
+          <h3>Second Slide</h3>
+          <p>Description for the second slide.</p>
+        </div>
+      </div>
+
+      <!-- Third Slide (Active) -->
+      <div class="item third-slide active">
+        <img src="https://i.pinimg.com/736x/71/de/4e/71de4ed8be680f961fabb7473609f559.jpg" alt="Third Slide">
+        <div class="carousel-caption">
+          <h3>Third Slide</h3>
+          <p>Description for the third slide.</p>
+        </div>
+      </div>
+
+      <!-- Fourth Slide -->
+      <div class="item fourth-slide">
+        <img src="https://i.pinimg.com/736x/71/de/4e/71de4ed8be680f961fabb7473609f559.jpg" alt="Fourth Slide">
+        <div class="carousel-caption">
+          <h3>Fourth Slide</h3>
+          <p>Description for the fourth slide.</p>
+        </div>
+      </div>
+
+      <!-- Fifth Slide -->
+      <div class="item fifth-slide">
+        <img src="https://i.pinimg.com/736x/71/de/4e/71de4ed8be680f961fabb7473609f559.jpg" alt="Fifth Slide">
+        <div class="carousel-caption">
+          <h3>Fifth Slide</h3>
+          <p>Description for the fifth slide.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and Right Controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
